@@ -10,10 +10,7 @@ min = int(input())
 max = int(input())
 
 for i in students:
-	ave = 0
-	for num in i[2]:
-		ave += num
-	ave /= 10
-	if ave >= min and ave <= max:
+	avg = sum(i[2]) / len(i[2])
+	if avg >= min and avg <= max:
 		print(i[0])
 	

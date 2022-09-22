@@ -9,17 +9,7 @@ students = [
 student_grade = dict()
 
 for i in students:
-	ave = 0
-	min = 150
-	max = 0
-	for num in i[2]:
-		ave += num
-		if num > max:
-			max = num
-		if num < min:
-			min = num
-	ave /= 10
-	student_grade[i[0]] = [ave, max, min]
+	student_grade[i[0]] = [sum(i[2]) / len(i[2]), max(i[2]), min(i[2])]
 	
 name = input()
 st = student_grade[name]
