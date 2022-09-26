@@ -1,5 +1,3 @@
-list = []
-
 for i in range(5):
     str_input = input()
     list.append(str_input)
