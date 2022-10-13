@@ -17,7 +17,12 @@ print(score_2_add)
 score_2['평균'] = score_2.mean(numeric_only = True, axis = 1)
 score_2_add['평균'] = score_2_add.mean(numeric_only = True, axis = 1)
 
-
 print('최종 점수표')
 print(pd.concat([score_2, score_2_add], axis = 0))
+
+#교수님 코드
+#sc = pd.concat([score_2, score_2_add], axis = 0)
+#sc['평균'] = sc[['문학', '수학', '역사', '과학']].mean(axis=1) 
+#print('최종 점수표')
+#print(sc)
 #########################

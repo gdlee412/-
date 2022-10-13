@@ -28,4 +28,20 @@ print()
 
 print('출석율 하위 3명의 평균 점수')
 print(score_5.tail(3))
+
+#교수님
+#final = pd.merge(attend, score_4)
+#print('평균 점수 상위 3명의 출석율')
+#print(finala[:3]['이름', '출석율'])
+#print()
+#print('평균 점수 하위 3명의 출석율')
+#print(final[-3:]['이름', '출석율'])
+
+#final = final.sort_values(by=['출석율'], ascending=false)
+#print()
+#print('출석율 상위 3명의 평균 점수')
+#print(finala[:3]['이름', '평균'])
+#print()
+#print('출석율 하위 3명의 평균 점수')
+#print(final[-3:]['이름', '평균'])
 #########################
