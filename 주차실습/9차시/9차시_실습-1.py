@@ -10,12 +10,12 @@ fig_x = int(input())
 fig_y = int(input())
 fig = plt.figure(figsize=(fig_x, fig_y))
 
-##코드 부분
+########################################코드##########################################
 title = "Grade Graph"
 plt.plot(Semester,Grade)
 plt.title(title)
 
-##
+#####################################################################################
 
 plt.savefig('./data/out.png')
 
