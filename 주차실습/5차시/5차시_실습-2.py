@@ -2,6 +2,7 @@
 # UTF-8 encoding when using korean
 import numpy as np
 
+########################################코드##########################################
 #array size
 num = int(input())
 # 점수를 담아둘 어레이를 생성하세요
@@ -27,4 +28,5 @@ score_answer = 0
 student_num = int(input())
 score_answer = score[student_num]
 
+#####################################################################################
 print(int(score_answer))

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 import numpy as np
-
+########################################코드##########################################
 #array size
 size_input = list(map(int, input().split()))
 class_size = size_input[0]
@@ -41,5 +41,5 @@ class_score_average = 0.0
 class_num = int(input())
 #get average of the class
 class_score_average = np.mean(score[class_num])
-
+#####################################################################################
 print(f"{class_score_average:.2f}")
