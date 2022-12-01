@@ -4,7 +4,7 @@ df = pd.read_csv('data/winequality-red-converted.csv',dtype=float) # quality가 
 df_test = df[:300]
 df = df[300:]
 
-##########################코드###############################
+########################################코드##########################################
 from sklearn.linear_model import LogisticRegression
 
 lr = LogisticRegression(max_iter = 1000)
@@ -16,7 +16,7 @@ test_x = df_test.drop(['quality'],axis=1)
 test_y = df_test['quality']
 
 lr.fit(x, y)
-###########################################################
+#####################################################################################
 train_score = lr.score(x, y)
 test_score = lr.score(test_x,test_y)
 train_pass = False

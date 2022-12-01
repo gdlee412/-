@@ -5,7 +5,7 @@ df = pd.read_csv('data/winequality-red-converted.csv',dtype=float) # quality가 
 df_test = df[:300]
 df = df[300:]
 
-#############################코드 ####################################
+########################################코드##########################################
 # colab 등에서 데이터를 시각화하는 등 자유롭게 전처리를 진행하고 모델을 성능을 올려봅시다.
 from sklearn.linear_model import LogisticRegression
 
@@ -23,27 +23,27 @@ test_x = df_test.drop(['quality'], axis = 1)
 test_y = df_test['quality']
 
 lr.fit(x, y)
-#################################################################
-#####################################교수님 코드###############################
-df.drop(['ph'], axis - 1, inplace = True)
-df_test.drop(['ph'], axis - 1, inplace = True)
 
-df.drop(df.loc[df['total sulfur dioxide'] > 160].index, axis = 0, inplace = True)
-df.drop(df.loc[df['free sulfur dioxide'] > 50].index, axis = 0, inplace = True)
+# 교수님코드
+# df.drop(['ph'], axis - 1, inplace = True)
+# df_test.drop(['ph'], axis - 1, inplace = True)
 
-x = df.drop(['quality'], axis = 1)
-y = df['quality']
+# df.drop(df.loc[df['total sulfur dioxide'] > 160].index, axis = 0, inplace = True)
+# df.drop(df.loc[df['free sulfur dioxide'] > 50].index, axis = 0, inplace = True)
 
-test_x = df_test.drop(['quality'], axis = 1)
-test_y = df_test['quality']
+# x = df.drop(['quality'], axis = 1)
+# y = df['quality']
 
-from sklearn.linear_model import LogisticRegression
+# test_x = df_test.drop(['quality'], axis = 1)
+# test_y = df_test['quality']
 
-lr = LogisticRegression(max_iter=1000)
+# from sklearn.linear_model import LogisticRegression
 
-lr.fit(x, y)
+# lr = LogisticRegression(max_iter=1000)
 
-##########################################################################
+# lr.fit(x, y)
+#####################################################################################
+
 train_score = lr.score(x, y)
 test_score = lr.score(test_x,test_y)
 train_pass = False
