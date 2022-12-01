@@ -7,7 +7,7 @@ fig_x = int(input())
 fig_y = int(input())
 fig = plt.figure(figsize=(fig_x, fig_y))
 
-## 코드 ##
+########################################코드##########################################
 
 file_path = 'data/heiweimus.csv'
 df = pd.read_csv(file_path)
@@ -19,7 +19,7 @@ plt.subplot(1,2,2)
 plt.scatter(df["height"], df["muscle"])
 plt.title("height-muscle")
 
-##
+#####################################################################################
 
 plt.savefig('./data/out.png')
 fig.canvas.draw()

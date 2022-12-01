@@ -7,14 +7,14 @@ fig_x = int(input())
 fig_y = int(input())
 fig = plt.figure(figsize=(fig_x, fig_y))
 
-## 코드 ##
+########################################코드##########################################
 file_path = 'data/heiweimus.csv'
 df = pd.read_csv(file_path)
 
 plt.bar(df["weight"], df["muscle"])
 plt.title("weight-muscle")
 
-##
+#####################################################################################
 
 plt.savefig('./data/out.png')
 fig.canvas.draw()
