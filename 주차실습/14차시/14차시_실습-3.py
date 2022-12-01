@@ -24,6 +24,26 @@ test_y = df_test['quality']
 
 lr.fit(x, y)
 #################################################################
+#####################################교수님 코드###############################
+df.drop(['ph'], axis - 1, inplace = True)
+df_test.drop(['ph'], axis - 1, inplace = True)
+
+df.drop(df.loc[df['total sulfur dioxide'] > 160].index, axis = 0, inplace = True)
+df.drop(df.loc[df['free sulfur dioxide'] > 50].index, axis = 0, inplace = True)
+
+x = df.drop(['quality'], axis = 1)
+y = df['quality']
+
+test_x = df_test.drop(['quality'], axis = 1)
+test_y = df_test['quality']
+
+from sklearn.linear_model import LogisticRegression
+
+lr = LogisticRegression(max_iter=1000)
+
+lr.fit(x, y)
+
+##########################################################################
 train_score = lr.score(x, y)
 test_score = lr.score(test_x,test_y)
 train_pass = False
