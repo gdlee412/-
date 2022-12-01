@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
-###################### 코드 #########################
+########################################코드##########################################
 
 from sklearn.linear_model import LinearRegression
 from sklearn.datasets import load_boston
@@ -66,7 +66,7 @@ print(lr.score(test_X, test_Y))
 print(lr2.score(train_X2, train_Y2))
 print(lr2.score(test_X2, test_Y2))
 
-#######################################
+#####################################################################################
 #마지막 모델은 lr3라는 이름으로 정의하고 학습을 해주세요.
 print(lr3.score(train_X3, train_Y3))
 print(lr3.score(test_X3, test_Y3))
