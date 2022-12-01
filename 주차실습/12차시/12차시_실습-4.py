@@ -4,7 +4,7 @@ import pandas as pd
 
 whr = pd.read_csv('data/WHR2022.csv')
 
-####### 코드 #########
+########################################코드##########################################
 
 data = whr.drop(['Whisker-high', 'Whisker-low', 'Country', 'RANK'], axis = 1)
 data.columns = ['happy_score', 'residual', 'gdp', 'social_support', 'health', 'freedom', 'generosity', 'trust']
@@ -33,3 +33,4 @@ print(divided.idxmax(), max(divided))
 divided = divided.drop(divided.idxmax())
 
 print(divided.idxmax(), max(divided))
+#####################################################################################
