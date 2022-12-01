@@ -8,7 +8,8 @@ grades = pd.read_csv(file_path_grades)
 
 pd.set_option('mode.chained_assignment',  None)
 
-##여기에 코드를 작성하세요##
+########################################코드##########################################
+
 score_3 = pd.merge(grades, score_3)
 print('학점이 기재된 점수표')
 print(score_3)
@@ -16,4 +17,4 @@ print(score_3)
 score_4 = score_3.groupby('학점')
 print('학점 별 평균 점수')
 print(score_4.mean())
-#########################
+#####################################################################################
